@@ -1,15 +1,16 @@
 # Made with python3
 # (C) @FayasNoushad
+# (C) @BXBotz
 # Copyright permission under MIT License
 # All rights reserved by FayasNoushad
-# License -> https://github.com/FayasNoushad/Translator-Bot-V2/blob/main/LICENSE
+# License -> https://github.com/FayasNoushad/Translator-Bot-V2/blob/main/LICENCE
 
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from googletrans import Translator
 
-FayasNoushad = Client(
+Telegram = Client(
     "Translator Bot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
@@ -83,31 +84,28 @@ TRANSLATE_BUTTON = InlineKeyboardMarkup(
 LANGUAGE_BUTTONS = InlineKeyboardMarkup(
     [[
     InlineKeyboardButton("മലയാളം", callback_data="Malayalam"),
-    InlineKeyboardButton("தமிழ்", callback_data="Tamil"),
-    InlineKeyboardButton("हिन्दी", callback_data="Hindi")
+    InlineKeyboardButton("Tamil", callback_data="Tamil"),
+    InlineKeyboardButton("Hindi", callback_data="Hindi")
     ],[
-    InlineKeyboardButton("ಕನ್ನಡ", callback_data="Kannada"),
-    InlineKeyboardButton("తెలుగు", callback_data="Telugu"),
-    InlineKeyboardButton("मराठी", callback_data="Marathi")
+    InlineKeyboardButton("Kannada", callback_data="Kannada"),
+    InlineKeyboardButton("Telugu", callback_data="Telugu"),
+    InlineKeyboardButton("Marathi", callback_data="Marathi")
     ],[
-    InlineKeyboardButton("ગુજરાતી", callback_data="Gujarati"),
-    InlineKeyboardButton("ଓଡ଼ିଆ", callback_data="Odia"),
-    InlineKeyboardButton("বাংলা", callback_data="bn")
+    InlineKeyboardButton("Gujarati", callback_data="Gujarati"),
+    InlineKeyboardButton("Odia", callback_data="Odia"),
+    InlineKeyboardButton("Arabic", callback_data="arabic")
     ],[
-    InlineKeyboardButton("ਪੰਜਾਬੀ", callback_data="Punjabi"),
-    InlineKeyboardButton("فارسی", callback_data="Persian"),
+    InlineKeyboardButton("Punjabi", callback_data="Punjabi"),
+    InlineKeyboardButton("Persian", callback_data="Persian"),
     InlineKeyboardButton("English", callback_data="English")
     ],[
-    InlineKeyboardButton("español", callback_data="Spanish"),
-    InlineKeyboardButton("français", callback_data="French"),
-    InlineKeyboardButton("русский", callback_data="Russian")
-    ],[
-    InlineKeyboardButton("עִברִית", callback_data="hebrew"),
-    InlineKeyboardButton("العربية", callback_data="arabic")
+    InlineKeyboardButton("Spanish", callback_data="Spanish"),
+    InlineKeyboardButton("French", callback_data="French"),
+    InlineKeyboardButton("Russian", callback_data="Russian")
     ]]
 )
 
-@FayasNoushad.on_callback_query()
+@Telegram.on_callback_query()
 async def cb_data(bot, update):
     if update.data == "home":
         await update.message.edit_text(
@@ -130,7 +128,7 @@ async def cb_data(bot, update):
     elif update.data == "close":
         await update.message.delete()
     else:
-        message = await update.message.edit_text("`Translating...`")
+        message = await update.message.edit_text("`🌐 Translating...`")
         text = update.message.reply_to_message.text
         language = update.data
         translator = Translator()
@@ -139,7 +137,7 @@ async def cb_data(bot, update):
             translate_text = f"**Translated to {language}**"
             translate_text += f"\n\n{translate.text}"
             if len(translate_text) < 4096:
-                translate_text += "\n\nMade by @FayasNoushad"
+                translate_text += "\n\n**Made With ❤ By @BX_Botz**"
                 await message.edit_text(
                     text=translate_text,
                     disable_web_page_preview=True,
@@ -150,15 +148,15 @@ async def cb_data(bot, update):
                     translate_file.name = language + ".txt"
                     await update.reply_document(
                         document=translate_file,
-                        caption="Made by @FayasNoushad",
+                        caption="**Made With ❤ By @BX_Botz**",
                         reply_markup=TRANSLATE_BUTTON
                     )
                 await message.delete()
         except Exception as error:
             print(error)
-            await message.edit_text("Something wrong. Contact @TheFayas.")
+            await message.edit_text("Something wrong. Contact My Support Group\n\n☎️ @BXSupport")
 
-@FayasNoushad.on_message(filters.command(["start"]))
+@Telegram.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.mention)
     reply_markup = START_BUTTONS
@@ -168,7 +166,7 @@ async def start(bot, update):
         reply_markup=reply_markup
     )
 
-@FayasNoushad.on_message(filters.private & filters.text)
+@Telegram.on_message(filters.private & filters.text)
 async def translate(bot, update):
     await update.reply_text(
         text="Select a language below for translating",
@@ -177,4 +175,4 @@ async def translate(bot, update):
         quote=True
     )
     
-FayasNoushad.run()
+Telegram.run()
