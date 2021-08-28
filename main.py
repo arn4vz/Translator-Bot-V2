@@ -17,57 +17,67 @@ FayasNoushad = Client(
 )
 
 START_TEXT = """
-Hello {}, I am a google translator telegram bot.
+Hello {},
 
-Made by @FayasNoushad
+Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language
+
+Made With ❤ By @BX_Botz
 """
 HELP_TEXT = """
-- Just send a text with language code
-- And select a language for translating
+✪ `Just send a text with language code`
 
-Made by @FayasNoushad
+✪ `And select a language for translating`
+
+© [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz) 
 """
 ABOUT_TEXT = """
-- **Bot :** `Translator Bot V2`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Translator-Bot-V2)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+🤖 **Bot** : Google Translator
+
+👨‍💻 **Developer** : [ᴍʜᴅ ᴍᴜꜰᴀz](https://telegram.me/Mufaz123)
+
+📣 **Channel** : @BX_Botz
+
+👥 **Group** : [ʙx sᴜᴘᴘᴏʀᴛ](https://t.me/BxSupport)
+
+🌐 **Source** : [Click here](https://t.me/nokiyirunnoippokitum)
+
+🎧 **Language** : [Python3](https://python.org/)
+
+📚 **Library** : [Pyrogram](https://pyrogram.org/)
+
+📡 **Server** : [Heroku](https://heroku.com/)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🤖 Update Channel', url='https://telegram.me/BX_Botz'),
+        InlineKeyboardButton('🎨 Support Group', url='https://telegram.me/BXSUPPORT')
+        ],[
+        InlineKeyboardButton('🛠️ Help', callback_data='help'),
+        InlineKeyboardButton('🔮 About', callback_data='about')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🏠Home', callback_data='home'),
+        InlineKeyboardButton('♻️About', callback_data='about'),
+        InlineKeyboardButton('Close 🔒', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
-        ],[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🏠Home', callback_data='home'),
+        InlineKeyboardButton('🛠️Help', callback_data='help'),
+        InlineKeyboardButton('Close 🔒', callback_data='close')
         ]]
     )
 CLOSE_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Close 🔒', callback_data='close')
         ]]
     )
 TRANSLATE_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')
+        InlineKeyboardButton('♻️ Join Updates Channel ♻️', url='https://telegram.me/BX_Botz')
         ]]
     )
 LANGUAGE_BUTTONS = InlineKeyboardMarkup(
