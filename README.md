@@ -7,8 +7,10 @@ A simple google translator telegram bot version 2
 ```
 Made with Python3
 (C) @FayasNoushad
+(C) @BXBotz
 Copyright permission under MIT License
 License -> https://github.com/FayasNoushad/Translator-Bot-V2/blob/main/LICENSE
+License -> https://github.com/BXBotz/Translator-Bot-V2/blob/main/LICENSE
 ```
 
 ---
@@ -19,9 +21,9 @@ License -> https://github.com/FayasNoushad/Translator-Bot-V2/blob/main/LICENSE
   <summary><b>Deploy on Heroku</b></summary>
 <br/>
 
-<p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/FayasNoushad/Translator-Bot-V2/tree/main">
-     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
+<p align="middle">
+  <a href="https://heroku.com/deploy?template=https://github.com/BXBotz/Translator-Bot-V2/tree/main">
+     <img height="25px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 </p>
 
