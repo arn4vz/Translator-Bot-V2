@@ -1,6 +1,6 @@
 # Translator-Bot-V2
 
-A simple google translator telegram bot version 2
+🤖 A Simple Google Translator Telegram Bot
 
 ---
 
