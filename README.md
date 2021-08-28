@@ -62,6 +62,7 @@ python3 main.py
 ## Credits
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
+- [BX Botz](https://github.com/BXBotz)
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [Google Translator](https://translate.google.com)
-- [Translator Bot](https://github.com/FayasNoushad/Translator-Bot)
+- [Translator Bot](https://github.com/BXBotz/Translator-Bot)
