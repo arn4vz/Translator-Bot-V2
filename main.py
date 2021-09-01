@@ -169,7 +169,7 @@ async def start(bot, update):
 @Telegram.on_message(filters.private & filters.text)
 async def translate(bot, update):
     await update.reply_text(
-        text="Select a language below for translating",
+        text="**Select You Desired Language**",
         disable_web_page_preview=True,
         reply_markup=LANGUAGE_BUTTONS,
         quote=True
