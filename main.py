@@ -148,7 +148,6 @@ async def cb_data(bot, update):
                     translate_file.name = language + ".txt"
                     await update.reply_document(
                         document=translate_file,
-                        caption="**Made With ❤ By @BX_Botz**",
                         reply_markup=TRANSLATE_BUTTON
                     )
                 await message.delete()
