@@ -137,7 +137,7 @@ async def cb_data(bot, update):
             translate_text = f"**Translated to {language}**"
             translate_text += f"\n\n`{translate.text}`"
             if len(translate_text) < 4096:
-                translate_text"
+                translate_text += ""
                 await message.edit_text(
                     text=translate_text,
                     disable_web_page_preview=True,
