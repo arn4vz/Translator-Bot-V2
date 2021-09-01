@@ -135,9 +135,9 @@ async def cb_data(bot, update):
         try:
             translate = translator.translate(text, dest=language)
             translate_text = f"**Translated to {language}**"
-            translate_text += f"\n\n{translate.text}"
+            translate_text += f"\n\n`{translate.text}`"
             if len(translate_text) < 4096:
-                translate_text += "\n\n**Made With ❤ By @BX_Botz**"
+                translate_text += "
                 await message.edit_text(
                     text=translate_text,
                     disable_web_page_preview=True,
@@ -148,6 +148,7 @@ async def cb_data(bot, update):
                     translate_file.name = language + ".txt"
                     await update.reply_document(
                         document=translate_file,
+                        caption="**Made With ❤ By @BX_Botz**",
                         reply_markup=TRANSLATE_BUTTON
                     )
                 await message.delete()
