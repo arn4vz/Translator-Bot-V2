@@ -20,9 +20,9 @@ Telegram = Client(
 START_TEXT = """
 Hello {},
 
-Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language
+`Iam a Simple Google Translater Bot. Send Me Any Text & Select Desired Language`
 
-Made With ❤ By @BX_Botz
+**Made With ❤ By @BX_Botz**
 """
 HELP_TEXT = """
 ✪ `Just send a text with language code`
