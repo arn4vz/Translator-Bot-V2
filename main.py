@@ -32,21 +32,21 @@ HELP_TEXT = """
 © [ʙx ʙᴏᴛᴢ](https://t.me/BX_Botz) 
 """
 ABOUT_TEXT = """
-🤖 **Bot** : Google Translator
+🤖 **Bot** : **Gᴏᴏɢʟᴇ Tʀᴀɴsʟᴀᴛᴏʀ**
 
-👨‍💻 **Developer** : [ᴍʜᴅ ᴍᴜꜰᴀz](https://telegram.me/Mufaz123)
+👨‍💻 **Dᴇᴠᴇʟᴏᴘᴇʀ** : [ᴍᴜꜰᴀᴢ 🇮🇳](https://telegram.me/Mufaz123)
 
-📣 **Channel** : @BX_Botz
+📣 **Cʜᴀɴɴᴇʟ** : [BX Bᴏᴛᴢ](https://t.me/BX_Botz)
 
-👥 **Group** : [ʙx sᴜᴘᴘᴏʀᴛ](https://t.me/BxSupport)
+👥 **Gʀᴏᴜᴘ** : [ʙx sᴜᴘᴘᴏʀᴛ](https://t.me/BxSupport)
 
-🌐 **Source** : [Click here](https://t.me/nokiyirunnoippokitum)
+🌐 **Sᴏᴜʀᴄᴇ** : [Cʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/nokiyirunnoippokitum)
 
-🎧 **Language** : [Python3](https://python.org/)
+🎧 **Lᴀɴɢᴜᴀɢᴇ** : [Pʏᴛʜᴏɴ𝟹](https://python.org/)
 
-📚 **Library** : [Pyrogram](https://pyrogram.org/)
+📚 **Lɪʙʀᴀʀʏ** : [Pʏʀᴏɢʀᴀᴍ](https://pyrogram.org/)
 
-📡 **Server** : [Heroku](https://heroku.com/)
+📡 **Sᴇʀᴠᴇʀ** : [Hᴇʀᴏᴋᴜ](https://heroku.com/)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
