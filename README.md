@@ -22,7 +22,7 @@ License -> https://github.com/BXBotz/Translator-Bot-V2/blob/main/LICENSE
 <br/>
 
 <p align="middle">
-  <a href="https://heroku.com/deploy?template=https://github.com/BXBotz/Translator-Bot-V2/tree/main">
+  <a href="https://heroku.com/deploy?template=https://github.com/arn4vz/Translator-Bot-V2/tree/main">
      <img height="25px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 </p>
